@@ -1,0 +1,23 @@
+get avg sentence length
+  get word count
+  count punctuation
+  divide word count by punctuation
+
+
+
+count unique words
+
+get avg word length
+
+
+function report
+  set variable for word count = word count function
+  set variable for distinct words = distinct word function
+  set variable for avg word length = avg word length function
+  set variable for avg sentence length = avg sentence function
+
+Listen for click
+  prevent page reload
+  set variable value
+  function to create report
+return results to page
