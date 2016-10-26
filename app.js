@@ -1,37 +1,31 @@
-// for average sentence lenght we need to find the number of sentces and divide
-// the number of words.
-function averageSentenceLength() {
-    // word count
-    var wordCount = $('#user-text').val().split(/[\s\.,;]+/);
-
-    // number of sentences
-    var sentenceCount = $ String.prototype.count = function(search) {
-        var m = this.match(new RegExp(search.toString().replace(/(?=[.\\+*?[^\]$(){}\|])/g, "\\"), "g"));
-        return m ? m.length : 0;
-    }
-    return (wordCount / sentenceCount) = avgSentenceLength
-}
-//loop for number of unque words
-
-// function to run report
-function textReport(text) {
-
-}
-var lenghtSentences = averageSentenceLength()
-
-
-var reportText = $('.js_text-report');
-textReport.find('.js-word-count').text(wordCount);
-textReport.find('.js-unique-word-count').text();
-textReport.find('.js-average-word-length').text();
-textReport.find('.js-average-sentence-length').text(avgSentenceLength);
-textReport.removeClass('hidden');
-
-
-
-// trigger and event listner.
-$('.js-text-form').submit(function(event) {
+//when user submits form listen for event.
+$('form').submit(function(event) {
+    // prevent page form re loading
     event.preventDefault();
-    var userText = $(this).find('#user-text').val();
-    textReport(removeReturns(userText));
-})
+    // declare variables for data being worked with and set to 0
+    var avgWordLength, wordTotalLength = 0;
+    var uniqueWords, wordCount = 0;
+    var countSentences = 0;
+    //
+    //input/store the user submited data in to the variables
+    //split puncuation and spaces for word count
+    countSentences = ($('user-text').val().split(. ? !))
+    wordCount = ($('user-text').val().split(' '));
+    uniquewords, ($('user-text').val().split(' '));
+
+    // count through words
+
+    // count through unique words elminate duplicates return lenght
+
+
+    //count through puncuation to find number of sentences and divide for avg length
+
+    // DOM  remove class for hidden classes
+
+    //assign the output data to previously hidden clases 
+
+
+
+
+
+});
