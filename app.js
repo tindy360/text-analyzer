@@ -1,6 +1,6 @@
 //when user submits form listen for event.
 $('form').submit(function(event) {
-
+      event.preventDefault();
 
 
             // declare variables for data being worked with and set to 0
@@ -10,11 +10,13 @@ $('form').submit(function(event) {
             var countSentences, sentencesReturn =0;
             var avgSentenceLength = 0;
 
-            event.preventDefault();
+
             //
             //input/store the user submited data in to the variables
             //split puncuation and spaces for word count
-            countSentences = ($('user-text').val().split((. ? !)); wordCount = ($('user-text').val().split((' ')); uniqueWords = ($('user-text').val().split((' '));
+            countSentences = ($('textarea#user-text').val().split(' '));
+            wordCount = ($('textarea#user-text').val().split(' '));
+            uniqueWords = ($('textarea#user-text').val().split(' '));
 
                     // count through words
                     for (var i = 0; i < wordCount.length; i++) {
@@ -34,11 +36,11 @@ $('form').submit(function(event) {
                     avgSentenceLength = (countSentences.length / wordCount.length);
 
                     //run math for average word lenght
-                    avgWordLength = (wordReturn / worCount.length);
+                    avgWordLength = (wordReturn / wordCount.length);
 
 
                     // DOM  remove class for hidden classes
-                    $('.text-report').removeClass(hidden);
+                    $('.text-report').removeClass('hidden');
                     //assign the output data to previously hidden clases
                     $('word-count').text(wordsCounted);
                     $('unique-words').text(uniqueWords);
@@ -46,7 +48,3 @@ $('form').submit(function(event) {
                     $('average-sentence-length').text(avgSentenceLength)
 
                 });
-
-
-
-            });
