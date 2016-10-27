@@ -42,7 +42,7 @@ $('form').submit(function(event) {
                     // DOM  remove class for hidden classes
                     $('.text-report').removeClass('hidden');
                     //assign the output data to previously hidden clases
-                    $('word-count').text(wordsCounted);
+                    $('word-count').text(wordReturn);
                     $('unique-words').text(uniqueWords);
                     $('average-word-length').text(avgWordLength);
                     $('average-sentence-length').text(avgSentenceLength)
